@@ -45,7 +45,7 @@ const upcomingEvents = [
     date: "June 15-17, 2025",
     location: "IARI, New Delhi",
     time: "9:00 AM - 5:00 PM",
-    image: "/images/event-workshop.png",
+    image: "/images/unnamed5.jpg",
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ const upcomingEvents = [
     date: "July 5-10, 2025",
     location: "CISH, Lucknow",
     time: "10:00 AM - 4:00 PM",
-    image: "/images/event-training.png",
+    image: "/images/unnamed6.jpg",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ const upcomingEvents = [
     date: "August 20-22, 2025",
     location: "NBPGR, New Delhi",
     time: "9:00 AM - 6:00 PM",
-    image: "/images/event-conference.png",
+    image: "/images/unnamed8.jpg",
   },
 ]
 
