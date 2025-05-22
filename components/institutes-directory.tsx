@@ -35,7 +35,7 @@ const institutes = [
     location: "New Delhi",
     region: "North",
     type: "Education",
-    image: "/images/unnamed2.jpg",
+    image: "/images/unnamed10.jpg",
     description:
       "Premier national institute for agricultural research, education, and extension. Known as Pusa Institute.",
     contact: {
@@ -52,7 +52,7 @@ const institutes = [
     location: "Kochi, Kerala",
     region: "South",
     type: "Fisheries",
-    image: "/images/unnamed2.jpg",
+    image: "/images/unnamed11.jpg",
     description:
       "Conducts research and training in marine fisheries to increase marine fish production and sustainability.",
     contact: {
