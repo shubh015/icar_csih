@@ -1,27 +1,36 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+  ArrowRight,
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
-  const [email, setEmail] = useState("")
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle newsletter subscription
-    console.log("Subscribed with email:", email)
-    setIsSubmitted(true)
+    console.log("Subscribed with email:", email);
+    setIsSubmitted(true);
     setTimeout(() => {
-      setEmail("")
-      setIsSubmitted(false)
-    }, 3000)
-  }
+      setEmail("");
+      setIsSubmitted(false);
+    }, 3000);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,7 +41,7 @@ export default function Footer() {
         delayChildren: 0.3,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -41,7 +50,7 @@ export default function Footer() {
       y: 0,
       transition: { duration: 0.6 },
     },
-  }
+  };
 
   const socialVariants = {
     hidden: { opacity: 0, scale: 0 },
@@ -55,13 +64,21 @@ export default function Footer() {
         damping: 10,
       },
     }),
-  }
+  };
 
   return (
-    <footer id="contact" className="bg-leaf-dark text-white relative overflow-hidden">
+    <footer
+      id="contact"
+      className="bg-leaf-dark text-white relative overflow-hidden"
+    >
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
-        <Image src="/images/abstract-pattern.png" alt="Decorative Pattern" fill className="object-cover" />
+        <Image
+          src="/images/abstract-pattern.png"
+          alt="Decorative Pattern"
+          fill
+          className="object-cover"
+        />
       </div>
 
       {/* Animated Particles */}
@@ -118,15 +135,23 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="bg-logo-bg rounded-full p-1">
-                <Image src="/cish-logo.png" alt="CISH Logo" width={50} height={50} className="object-contain" />
+              <div className="rounded-full p-1">
+                <Image
+                  src="/images/mangoLogo-removebg-preview (1).png"
+                  alt="CISH Logo"
+                  width={110}
+                  height={100}
+                  className="object-contain"
+                />
               </div>
+
               <span className="font-bold text-xl">ICAR-CISH</span>
             </motion.div>
             <p className="text-gray-300 text-sm">
-              The Central Institute for Subtropical Horticulture (CISH) is an autonomous organization under the Indian
-              Council of Agricultural Research (ICAR), focusing on research and development of subtropical fruits like
-              mango, guava, and litchi.
+              The Central Institute for Subtropical Horticulture (CISH) is an
+              autonomous organization under the Indian Council of Agricultural
+              Research (ICAR), focusing on research and development of
+              subtropical fruits like mango, guava, and litchi.
             </p>
             <div className="flex space-x-4 pt-2">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
@@ -140,7 +165,10 @@ export default function Footer() {
                   whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link href="#" className="text-white hover:text-mango transition-colors">
+                  <Link
+                    href="#"
+                    className="text-white hover:text-mango transition-colors"
+                  >
                     <Icon size={20} />
                     <span className="sr-only">Social Media</span>
                   </Link>
@@ -152,7 +180,15 @@ export default function Footer() {
           <motion.div variants={itemVariants}>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["About Us", "Research", "Publications", "Careers", "Tenders", "RTI", "Contact Us"].map((item, i) => (
+              {[
+                "About Us",
+                "Research",
+                "Publications",
+                "Careers",
+                "Tenders",
+                "RTI",
+                "Contact Us",
+              ].map((item, i) => (
                 <motion.li
                   key={item}
                   initial={{ opacity: 0, x: -20 }}
@@ -160,11 +196,18 @@ export default function Footer() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * i, duration: 0.5 }}
                 >
-                  <Link href="#" className="text-gray-300 hover:text-white transition-colors flex items-center group">
+                  <Link
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center group"
+                  >
                     <motion.div
                       className="mr-2"
                       whileHover={{ x: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       <ArrowRight size={14} />
                     </motion.div>
@@ -187,7 +230,8 @@ export default function Footer() {
               >
                 <MapPin size={18} className="mr-2 mt-1 text-mango" />
                 <span className="text-gray-300 text-sm">
-                  Rehmankhera, P.O. Kakori, Lucknow - 226101, Uttar Pradesh, India
+                  Rehmankhera, P.O. Kakori, Lucknow - 226101, Uttar Pradesh,
+                  India
                 </span>
               </motion.li>
               <motion.li
@@ -216,8 +260,8 @@ export default function Footer() {
           <motion.div variants={itemVariants}>
             <h3 className="font-semibold text-lg mb-4">Newsletter</h3>
             <p className="text-gray-300 text-sm mb-4">
-              Subscribe to our newsletter to receive updates on the latest research, events, and agricultural
-              innovations.
+              Subscribe to our newsletter to receive updates on the latest
+              research, events, and agricultural innovations.
             </p>
             <form onSubmit={handleSubmit} className="space-y-2">
               <div className="relative">
@@ -232,7 +276,11 @@ export default function Footer() {
                       Thank you for subscribing!
                     </motion.div>
                   ) : (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
                       <Input
                         type="email"
                         placeholder="Your email address"
@@ -268,16 +316,26 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-300">
-              &copy; {new Date().getFullYear()} Central Institute for Subtropical Horticulture. All rights reserved.
+              &copy; {new Date().getFullYear()} Central Institute for
+              Subtropical Horticulture. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-gray-300 hover:text-white transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-gray-300 hover:text-white transition-colors"
+              >
                 Terms of Use
               </Link>
-              <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-gray-300 hover:text-white transition-colors"
+              >
                 Sitemap
               </Link>
             </div>
@@ -285,5 +343,5 @@ export default function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

@@ -57,19 +57,24 @@ export default function Header() {
         isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-4",
       )}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
-        <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-logo-bg rounded-full p-1">
-              <Image src="/cish-logo.png" alt="CISH Logo" width={40} height={40} className="object-contain" />
-            </div>
-            <span
-              className={cn("font-semibold text-lg transition-colors", isScrolled ? "text-leaf-dark" : "text-white")}
-            >
-              ICAR-CISH
-            </span>
-          </Link>
-        </motion.div>
+    <div className="container mx-auto px-4 flex items-center justify-between">
+  <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+    <Link href="/" className="flex items-center gap-2">
+      <div className="rounded-full">
+        <Image
+          src="/images/mangoLogo-removebg-preview (1).png"
+          alt="CISH Logo"
+          width={110}
+          height={100}
+          className="object-contain"
+        />
+      </div>
+      
+    </Link>
+  </motion.div>
+
+  {/* Rest of the code remains unchanged */}
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
