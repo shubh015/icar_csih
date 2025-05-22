@@ -62,54 +62,7 @@ const institutes = [
       website: "https://www.cmfri.org.in",
     },
   },
-  // {
-  //   id: 4,
-  //   name: "National Dairy Research Institute",
-  //   shortName: "NDRI",
-  //   location: "Karnal, Haryana",
-  //   region: "North",
-  //   type: "Animal Science",
-  //   image: "/images/ndri-karnal.png",
-  //   description: "Premier institute in dairy research, providing quality education and training in dairy science.",
-  //   contact: {
-  //     address: "Karnal - 132001, Haryana",
-  //     phone: "+91-184-2259002",
-  //     email: "director.ndri@icar.gov.in",
-  //     website: "https://www.ndri.res.in",
-  //   },
-  // },
-  // {
-  //   id: 5,
-  //   name: "Central Rice Research Institute",
-  //   shortName: "CRRI",
-  //   location: "Cuttack, Odisha",
-  //   region: "East",
-  //   type: "Crop Research",
-  //   image: "/images/crri-cuttack.png",
-  //   description: "Conducts research on rice cultivation, developing high-yielding varieties and sustainable practices.",
-  //   contact: {
-  //     address: "Cuttack - 753006, Odisha",
-  //     phone: "+91-671-2367768",
-  //     email: "director.crri@icar.gov.in",
-  //     website: "https://www.crri.icar.gov.in",
-  //   },
-  // },
-  // {
-  //   id: 6,
-  //   name: "Central Arid Zone Research Institute",
-  //   shortName: "CAZRI",
-  //   location: "Jodhpur, Rajasthan",
-  //   region: "West",
-  //   type: "Natural Resource Management",
-  //   image: "/images/cazri-jodhpur.png",
-  //   description: "Focuses on sustainable farming systems for arid regions and technologies for drought management.",
-  //   contact: {
-  //     address: "Jodhpur - 342003, Rajasthan",
-  //     phone: "+91-291-2786584",
-  //     email: "director.cazri@icar.gov.in",
-  //     website: "https://www.cazri.res.in",
-  //   },
-  // },
+ 
 ]
 
 export default function InstitutesDirectory() {
