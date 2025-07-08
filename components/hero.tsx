@@ -21,14 +21,21 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    if (index.current < fullText1.length) {
-      const timeout = setTimeout(() => {
-        setText((prev) => prev + fullText1.charAt(index.current))
-        index.current += 1
-      }, 100)
-      return () => clearTimeout(timeout)
+  let i = 0
+  let currentText = ""
+
+  const interval = setInterval(() => {
+    currentText += fullText1.charAt(i)
+    setText(currentText)
+    i++
+
+    if (i >= fullText1.length) {
+      clearInterval(interval)
     }
-  }, [text])
+  }, 100)
+
+  return () => clearInterval(interval)
+}, [])
 
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
