@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
   const [text, setText] = useState("")
-  const fullText = "Advance Subtropical Horticulture for a Sustainable Future."
+  const fullText = " Advancing Subtropical Horticulture for a Sustainable Future."
   const index = useRef(0)
   const containerRef = useRef(null)
 
