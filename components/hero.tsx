@@ -6,8 +6,9 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
+  const fullText1 = "Advancing Subtropical Horticulture for a Sustainable Future"
+
   const [text, setText] = useState("")
-  const fullText = "Advancing Subtropical Horticulture for a Sustainable Future."
   const index = useRef(0)
   const containerRef = useRef(null)
 
@@ -20,9 +21,9 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    if (index.current < fullText.length) {
+    if (index.current < fullText1.length) {
       const timeout = setTimeout(() => {
-        setText((prev) => prev + fullText.charAt(index.current))
+        setText((prev) => prev + fullText1.charAt(index.current))
         index.current += 1
       }, 100)
       return () => clearTimeout(timeout)
