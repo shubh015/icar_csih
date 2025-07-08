@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
-  const fullText1 = "Advancing Subtropical Horticulture for a Sustainable Future"
+  const fullText1 = "Advancing Subtropical Horticulture for a Sustainable Future."
 
   const [text, setText] = useState("")
   const index = useRef(0)
