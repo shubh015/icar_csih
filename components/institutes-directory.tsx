@@ -13,19 +13,19 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const institutes = [
   {
     id: 1,
-    name: "Central Institute for Subtropical Horticulture",
-    shortName: "CISH",
+    name: "Indian Sugarcane Research Institute",
+    shortName: "IISR",
     location: "Lucknow, Uttar Pradesh",
     region: "North",
-    type: "Crop Research",
-    image: "/images/unnamed2.jpg",
+    type: "Sugarcane Research",
+    image: "/images/sugarcane-farm.jpg",
     description:
-      "Conducts research on subtropical fruits like mango, guava, and litchi to improve production and quality.",
+      "The Indian Central Sugarcane Committee for advanced research on all aspects of sugarcane cultivation except breeding and coordination of sugarcane researches across the country.",
     contact: {
-      address: "Rehmankhera, P.O. Kakori, Lucknow - 226101, Uttar Pradesh",
-      phone: "+91-522-2841022",
-      email: "director.cish@icar.gov.in",
-      website: "https://cish.org.in",
+      address: "RW4M+3C4, Raibareilley Road Dilkusha Indian Institute of Sugarcane Research, Uttar Pradesh 226002",
+      phone: "+91-522 248 0726",
+      email: "director.isri@icar.gov.in",
+      website: "https://isri.org.in",
     },
   },
   {

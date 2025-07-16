@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
-  const fullText1 = "Advancing Subtropical Horticulture for a Sustainable Future."
+  const fullText1 = "Advancing agrotechniques for tropical and subtropical cultivation of sugarbeet for a Sustainable Future."
 
   const [text, setText] = useState("")
   const index = useRef(0)
@@ -45,7 +45,7 @@ export default function Hero() {
     <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax */}
       <motion.div className="absolute inset-0 z-0" style={{ y, opacity }}>
-        <Image src="/images/mango-orchard-hero.jpeg" alt="CISH Mango Orchard" fill priority className="object-cover" />
+        <Image src="/images/sugarcane-farm.jpg" alt="CISH Mango Orchard" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
       </motion.div>
 
@@ -68,7 +68,7 @@ export default function Hero() {
               animate={{ opacity: 1, filter: "blur(0px)" }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Central Institute for Subtropical Horticulture
+              Indian Sugarcane Research Institute
             </motion.span>
           </motion.h1>
 

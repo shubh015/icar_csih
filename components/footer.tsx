@@ -137,21 +137,18 @@ export default function Footer() {
             >
               <div className="rounded-full p-1">
                 <Image
-                  src="/images/mangoLogo-removebg-preview (1).png"
-                  alt="CISH Logo"
+                  src="/images/isri.jpg"
+                  alt="IISR Logo"
                   width={110}
                   height={100}
                   className="object-contain"
                 />
               </div>
 
-              <span className="font-bold text-xl">ICAR-CISH</span>
+              <span className="font-bold text-xl">ICAR-IISR</span>
             </motion.div>
             <p className="text-gray-300 text-sm">
-              The Central Institute for Subtropical Horticulture (CISH) is an
-              autonomous organization under the Indian Council of Agricultural
-              Research (ICAR), focusing on research and development of
-              subtropical fruits like mango, guava, and litchi.
+             The Indian Institute of Sugarcane Research is an autonomous institute of higher learning, under the umbrella of Indian Council of Agricultural Research by the Ministry of Agriculture, Government of India for advanced research in sugar cane agriculture
             </p>
             <div className="flex space-x-4 pt-2">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
@@ -230,8 +227,7 @@ export default function Footer() {
               >
                 <MapPin size={18} className="mr-2 mt-1 text-mango" />
                 <span className="text-gray-300 text-sm">
-                  Rehmankhera, P.O. Kakori, Lucknow - 226101, Uttar Pradesh,
-                  India
+                 RW4M+3C4, Raibareilley Road Dilkusha Indian Institute of Sugarcane Research, Uttar Pradesh 226002
                 </span>
               </motion.li>
               <motion.li
@@ -242,7 +238,7 @@ export default function Footer() {
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <Phone size={18} className="mr-2 text-mango" />
-                <span className="text-gray-300">+91-522-2841022</span>
+                <span className="text-gray-300">+91-522 248 0726</span>
               </motion.li>
               <motion.li
                 className="flex items-center"
@@ -252,7 +248,7 @@ export default function Footer() {
                 transition={{ delay: 0.3, duration: 0.5 }}
               >
                 <Mail size={18} className="mr-2 text-mango" />
-                <span className="text-gray-300">director.cish@icar.gov.in</span>
+                <span className="text-gray-300">director.iisr@icar.gov.in</span>
               </motion.li>
             </ul>
           </motion.div>
@@ -316,8 +312,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-300">
-              &copy; {new Date().getFullYear()} Central Institute for
-              Subtropical Horticulture. All rights reserved.
+              &copy; {new Date().getFullYear()} Indian Sugarcane Research Institute. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link

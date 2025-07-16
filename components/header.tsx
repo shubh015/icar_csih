@@ -62,8 +62,8 @@ export default function Header() {
     <Link href="/" className="flex items-center gap-2">
       <div className="rounded-full">
         <Image
-          src="/images/mangoLogo-removebg-preview (1).png"
-          alt="CISH Logo"
+          src="/images/isri.jpg"
+          alt="IISR Logo"
           width={110}
           height={100}
           className="object-contain"
