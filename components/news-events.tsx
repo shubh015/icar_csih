@@ -11,12 +11,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 const newsItems = [
   {
     id: 1,
-    title: "ICAR Develops New Mango Variety",
+    title: "ICAR Develops New Sugarcane Variety",
     date: "May 15, 2025",
     category: "Research",
     excerpt:
-      "Scientists at ICAR have developed a new mango variety that can withstand prolonged drought conditions while maintaining yield.",
-    image: "/images/mango.jpg",
+      "Scientists at ICAR have developed a new sugarcane variety that can withstand prolonged drought conditions while maintaining yield.",
+    image: "/images/sugarcane-farm.jpg",
   },
   {
     id: 2,
