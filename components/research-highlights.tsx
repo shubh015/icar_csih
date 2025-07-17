@@ -10,23 +10,24 @@ import { Button } from "@/components/ui/button"
 const researchAreas = [
   {
     id: 1,
-    title: "Crop Improvement",
-    description: "Developing high-yielding, disease-resistant crop varieties through advanced breeding techniques.",
-    image: "https://etds-dev.s3.amazonaws.com/users/profile/1747908432575.png",
+    title: "Sugarcane Variety Improvement",
+    description: "Developing high-yielding, disease- and drought-resistant sugarcane varieties using advanced breeding techniques.",
+    image: "/images/new_sugar_2.jpg",
   },
   {
     id: 2,
-    title: "Sustainable Farming",
-    description: "Promoting eco-friendly agricultural practices to ensure long-term environmental sustainability.",
-    image: "/images/Gemini_Generated_Image_m4bmcpm4bmcpm4bm.jpeg",
+    title: "Sustainable Sugarcane Farming",
+    description: "Promoting eco-friendly and water-efficient practices in sugarcane cultivation for long-term sustainability.",
+    image: "/images/new_sugar.jpg",
   },
   {
     id: 3,
-    title: "Pest Management",
-    description: "Developing integrated pest management strategies to reduce crop losses and chemical usage.",
-    image: "/images/Gemini_Generated_Image_m4bmcom4bmcom4bm.jpeg",
+    title: "Sugarcane Pest Management",
+    description: "Developing integrated pest and disease management strategies to minimize crop loss and pesticide use in sugarcane fields.",
+    image: "/images/new_sugar_1.jpg",
   },
-]
+];
+
 
 export default function ResearchHighlights() {
   const ref = useRef(null)
