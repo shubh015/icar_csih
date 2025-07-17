@@ -137,7 +137,7 @@ export default function Footer() {
             >
               <div className="rounded-full p-1">
                 <Image
-                  src="/images/isri.jpg"
+                  src="/images/iisr_02.png"
                   alt="IISR Logo"
                   width={110}
                   height={100}

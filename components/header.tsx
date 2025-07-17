@@ -62,7 +62,7 @@ export default function Header() {
     <Link href="/" className="flex items-center gap-2">
       <div className="rounded-full">
         <Image
-          src="/images/isri.jpg"
+          src="/images/iisr_02.png"
           alt="IISR Logo"
           width={110}
           height={100}
