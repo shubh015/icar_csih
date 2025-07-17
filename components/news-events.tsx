@@ -49,11 +49,11 @@ const upcomingEvents = [
   },
   {
     id: 2,
-    title: "Training Program on Organic Farming Techniques",
+    title: "Training Program on Organic Sugarcane Farming Techniques",
     date: "July 5-10, 2025",
-    location: "CISH, Lucknow",
+    location: "IISR, Lucknow",
     time: "10:00 AM - 4:00 PM",
-    image: "/images/unnamed6.jpg",
+    image: "/images/new_sugar.jpg",
   },
   {
     id: 3,
